@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Change Baclground Color and Hex Color</title>
+    <title>Random Quote Generator</title>
     <!--Bootstrap Css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
    <!--Google Fonts-->
@@ -14,17 +14,26 @@
 </head>
 <body>
     <div class="container">
-        <br>
-        <br>
-        <div class="row max-height align-items-center text-center ">
-        <div class="col"><button id="btn" class="btn btn-info">
-            click me
-        </button></div>
+        <div class="row max-height align-items-center">
+            <div class="col-11 mx-auto col-md-6 quote-container p-5">
+                <button id="gen-btn" class="btn-outline-primary text-capitalize my-4">
+                Generate Quotes
+                </button>
+                <h3 class="text-muted">
+                    <span class="quote-icon mr-3">
+                        <i class="fas fa-quote-left fa-3x"></i>
+                    </span><span id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi eget dapibus ligula, non maximus tortor. Suspendisse velit sapien, 
+                        scelerisque sed ex eget, imperdiet faucibus mauris. 
+                        Phasellus arcu est, facilisis nec feugiat ut, pellentesque sed quam.
+                    </span></h3>
+                <h5 class="text-right text-capitalize author">-<span class="quote-author ml-3">
+                    author
+                </span> 
+            </h5>
+            </div>
         </div>
-        <div class="row align-items-center text-center"><div class="col-6" id="hex">
-            <p id="hexvalue"></p>  
-        </div></div>      
-    </div>
+     </div>
     
 <!--jquery-->
 <script src="js/jquery-3.4.1.min.js"></script>
